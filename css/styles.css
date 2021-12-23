@@ -142,16 +142,16 @@ body {
   .faq .first__container .image__wrapper::before {
     width: 100%;
     top: 20%;
-    left: -20%;
+    left: -15%;
     content: "";
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: 600px 600px;
-    background-position: -280px -190px;
+    background-position: -290px -190px;
   }
   .faq .first__container .image__wrapper .illustration__image {
-    left: -20%;
-    top: 20%;
+    left: -15%;
+    top: 22%;
     width: 100%;
     content: url("../images/illustration-woman-online-desktop.svg");
   }
