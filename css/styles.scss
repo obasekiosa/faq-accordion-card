@@ -43,8 +43,6 @@ $font-size: 12px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    // border: 2px dotted red;
 }
 
 body {
@@ -56,7 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: $soft-violet;
+    background-image: linear-gradient($soft-violet, $soft-blue);
 }
 
 .footer {
@@ -69,7 +67,7 @@ body {
     text-align: center;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: white; 
 }
 
 
@@ -80,6 +78,8 @@ body {
     border-radius: 20px;
     height: 450px;
     width: 300px;
+
+    box-shadow: 0 20px 40px 1px #00000074;
 
 
 
