@@ -17,10 +17,12 @@ body {
   background-color: #af67e9;
 }
 
-.attribution {
+.footer {
   position: absolute;
   bottom: 0;
-  right: 40vw;
+}
+
+.attribution {
   font-size: 11px;
   text-align: center;
 }
@@ -97,6 +99,10 @@ body {
   align-items: center;
   width: 10%;
 }
+.faq .second__container .questions__container .question__wrapper .heading:hover * {
+  color: #f47c57;
+  cursor: pointer;
+}
 .faq .second__container .questions__container .question__wrapper .answer {
   width: 90%;
   margin-top: 4px;
@@ -129,15 +135,10 @@ body {
     background-size: 40%;
   }
   .faq .first__container .image__wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
     overflow: hidden;
   }
   .faq .first__container .image__wrapper::before {
     width: 100%;
-    height: 100%;
-    position: absolute;
     top: 20%;
     left: -20%;
     content: "";
@@ -147,7 +148,6 @@ body {
     background-position: -240px -190px;
   }
   .faq .first__container .image__wrapper .illustration__image {
-    position: absolute;
     left: -20%;
     top: 20%;
     width: 100%;
@@ -156,46 +156,17 @@ body {
   .faq .second__container {
     width: 60%;
     height: 100%;
-    padding: 0 20px;
-    margin-top: 100px;
-    overflow: hidden;
+    padding: 0 120px 0 40px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .faq .second__container .title {
-    text-align: center;
-    font-weight: 700;
-    color: #1d1e35;
-    font-size: 1.8rem;
+    text-align: start;
   }
   .faq .second__container .questions__container {
     margin-top: 12px;
-  }
-  .faq .second__container .questions__container .question__wrapper {
-    border-bottom: 1px solid #e7e7e9;
-    padding: 0.8rem 0;
-  }
-  .faq .second__container .questions__container .question__wrapper .heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .faq .second__container .questions__container .question__wrapper .heading .question {
-    width: 90%;
-    font-size: 0.8rem;
-    color: #4a4b5e;
-  }
-  .faq .second__container .questions__container .question__wrapper .heading .arrow__wrapper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 10%;
-  }
-  .faq .second__container .questions__container .question__wrapper .answer {
-    width: 90%;
-    margin-top: 4px;
-    color: #787887;
-    font-size: 0.7rem;
-    line-height: 1.5;
-    display: none;
   }
 }
 
