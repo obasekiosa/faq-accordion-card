@@ -168,7 +168,8 @@ body {
                     color: $dark-grayish-blue;
                     font-size: 0.7rem;
                     line-height: 1.5;
-                    display: none;
+                    height: 0;
+                    visibility: hidden;
                 }
                 
             }
@@ -258,21 +259,22 @@ body {
     .heading {
         
         .question {
-            font-weight: 700;
-            color: $very-dark-desaturated-blue;
+            font-weight: 700 !important;
+            color: $very-dark-desaturated-blue !important;
         }
 
         .arrow__wrapper {
 
             .arrow__image {
-                transform: rotate(180deg);
+                transform: rotate(180deg) !important;
             }
         }
         
     }
 
     .answer {
-        display: block !important;
+        visibility: visible !important;
+        height: auto !important;
     }
     
 }
