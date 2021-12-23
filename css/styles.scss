@@ -184,7 +184,7 @@ body {
         
         flex-direction: row;
         justify-content: space-between;
-        width: 900px;
+        width: 800px;
         height: 400px;
 
         .first__container {
@@ -215,7 +215,7 @@ body {
                     background-image: url("../images/bg-pattern-desktop.svg");
                     background-repeat: no-repeat;
                     background-size: 600px 600px;
-                    background-position: -240px -190px;
+                    background-position: -280px -190px;
                 }
 
                 .illustration__image {
@@ -233,7 +233,7 @@ body {
         .second__container {
             width: 60%;
             height: 100%;
-            padding: 0 120px 0 40px;
+            padding: 0 100px 0 40px;
             margin-top: 0;
             display: flex;
             flex-direction: column;
