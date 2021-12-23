@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// Colors
+
+// Primary
+
+// Text
+
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+
+// Gradient
+
+// Background gradient:
+
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+// Neutral
+
+// Text
+
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+
+// Dividers
+
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+// Typography
+
+// Body Copy
+
+$font-size: 12px;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    // border: 2px dotted red;
+}
+
+body {
+    min-height: 100vh;
+    font-size: $font-size;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $soft-violet;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    right: 40vw;
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    // background-color: green;
+    height: 450px;
+    width: 300px;
+
+
+
+
+    .first__container {
+        height: 30%;
+        
+        .image__wrapper {
+            // background-color: red;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            &::before {
+                width: 70%;
+                height: 100%;
+                position: absolute;
+                left: 15%;
+                top: 0;
+                content: "";
+                background-image: url("../images/bg-pattern-mobile.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .illustration__image {
+                position: absolute;
+                left: 15%;
+                top: -70%;
+                width: 70%;
+            }
+        }
+    }
+
+
+
+    .second__container {
+        height: 70%;
+        padding: 0 20px;
+        margin-top: -16px;
+        // border: 2px dotted red;
+        overflow: hidden;
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            color: $very-dark-desaturated-blue;
+            font-size: 1.8rem;
+        }
+
+        .questions__container {
+            margin-top: 12px;
+            
+
+            .question__wrapper {
+                border-bottom: 1px solid $light-grayish-blue;
+                padding: 0.8rem 0;
+
+                &, & * {
+                    // border: 2px dotted red;
+                }
+
+                .heading {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    &, & * {
+                    // border: 1px dotted red;
+                    }
+                    
+                    .question {
+                        width: 90%;
+                        font-size: 0.8rem;
+                        color: $very-dark-grayish-blue;
+                    }
+
+                    .arrow__wrapper {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 10%;
+
+                        .arrow__image {
+                            // width: 50%;
+                        }
+                    }
+
+                    
+                    
+                }
+
+                .answer {
+                    width: 90%;
+                    margin-top: 4px;
+                    color: $dark-grayish-blue;
+                    font-size: 0.7rem;
+                    line-height: 1.5;
+                    display: none;
+                }
+                
+            }
+        }
+    }
+    
+}
+
+
+
+.selected {
+    
+    .heading {
+        
+        .question {
+            font-weight: 700;
+            color: $very-dark-desaturated-blue;
+        }
+
+        .arrow__wrapper {
+
+            .arrow__image {
+                transform: rotate(180deg);
+            }
+        }
+        
+    }
+
+    .answer {
+        display: block !important;
+    }
+    
+}

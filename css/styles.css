@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #af67e9;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 40vw;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  height: 450px;
+  width: 300px;
+}
+.faq .first__container {
+  height: 30%;
+}
+.faq .first__container .image__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.faq .first__container .image__wrapper::before {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 15%;
+  top: 0;
+  content: "";
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.faq .first__container .image__wrapper .illustration__image {
+  position: absolute;
+  left: 15%;
+  top: -70%;
+  width: 70%;
+}
+.faq .second__container {
+  height: 70%;
+  padding: 0 20px;
+  margin-top: -16px;
+  overflow: hidden;
+}
+.faq .second__container .title {
+  text-align: center;
+  font-weight: 700;
+  color: #1d1e35;
+  font-size: 1.8rem;
+}
+.faq .second__container .questions__container {
+  margin-top: 12px;
+}
+.faq .second__container .questions__container .question__wrapper {
+  border-bottom: 1px solid #e7e7e9;
+  padding: 0.8rem 0;
+}
+.faq .second__container .questions__container .question__wrapper .heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.faq .second__container .questions__container .question__wrapper .heading .question {
+  width: 90%;
+  font-size: 0.8rem;
+  color: #4a4b5e;
+}
+.faq .second__container .questions__container .question__wrapper .heading .arrow__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 10%;
+}
+.faq .second__container .questions__container .question__wrapper .answer {
+  width: 90%;
+  margin-top: 4px;
+  color: #787887;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  display: none;
+}
+
+.selected .heading .question {
+  font-weight: 700;
+  color: #1d1e35;
+}
+.selected .heading .arrow__wrapper .arrow__image {
+  transform: rotate(180deg);
+}
+.selected .answer {
+  display: block !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
