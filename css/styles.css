@@ -100,7 +100,7 @@ body {
   width: 10%;
 }
 .faq .second__container .questions__container .question__wrapper .heading:hover * {
-  color: #f47c57;
+  color: #f47c57 !important;
   cursor: pointer;
 }
 .faq .second__container .questions__container .question__wrapper .answer {
